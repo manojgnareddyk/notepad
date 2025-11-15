@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo "Tagging and Pushing Docker Image"
                 bat "docker tag notepad:v1 manojgnareddyk/notepad:v1"
-                bat "docker push docker push manojgnareddyk/notepad:v1"
+                bat "docker push manojgnareddyk/notepad:v1"
             }
         }
 
