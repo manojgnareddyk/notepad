@@ -12,7 +12,7 @@ pipeline {
         stage('Docker Login') {
             steps {
                 echo "Logging into Docker Hub"
-                bat 'docker login -u nikhitha9440 -p Nikki@0039'
+                bat 'docker login'
                 // More secure command:
                 // sh 'echo <DOCKER_PASSWORD> | docker login -u nikhitha --password-stdin'
             }
@@ -21,8 +21,8 @@ pipeline {
         stage('Tag & Push Docker Image to Docker Hub') {
             steps {
                 echo "Tagging and Pushing Docker Image"
-                bat "docker tag notepad:v1 nikhitha9440/notepad:v1"
-                bat "docker push nikhitha9440/notepad:v1"
+                bat "docker tag notepad:v1 docker push manojgnareddyk/notepad:v1"
+                bat "docker push docker push manojgnareddyk/notepad:v1"
             }
         }
 
