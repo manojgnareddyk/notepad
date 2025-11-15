@@ -16,4 +16,4 @@ spec:
       - name: notepad
         image: nikhitha9440/notepad:v1
         ports:
-          - containerPort: 80
+          - containerPort: 5000
