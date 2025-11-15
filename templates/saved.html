@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Note Saved</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Note Saved!</h2>
+    <p>Note Name: {{ name }}</p>
+    <p>Saved At: {{ time }}</p>
+    <a href="/note">Create Another Note</a><br>
+    <a href="/logout">Logout</a>
+</div>
+</body>
+</html>

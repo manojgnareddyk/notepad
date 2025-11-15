@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Note Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Create Your Note</h2>
+    <form method="POST">
+        <textarea name="text" maxlength="100" placeholder="Enter up to 100 characters..." required></textarea><br>
+        <input type="text" name="name" placeholder="Note name" required><br>
+        <button type="submit">Save Note</button>
+    </form>
+    <br>
+    <a href="/logout">Logout</a>
+</div>
+</body>
+</html>
