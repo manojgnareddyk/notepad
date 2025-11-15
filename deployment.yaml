@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: notepad
-        image: nikhitha9440/notepad:v1
+        image: manojgnareddyk/notepad:v1
         ports:
           - containerPort: 5000
